@@ -2,7 +2,7 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>KVS Recruitment System</title>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -70,14 +70,16 @@
                         <p class="text-lg md:text-xl text-indigo-100 mb-8 font-light">ระบบบริหารจัดการทรัพยากรบุคคลยุคใหม่ ทันสมัย รวดเร็ว และแม่นยำ</p>
                         <div class="flex flex-wrap gap-4 justify-center md:justify-start">
                             <button onclick="showGuestView('view-login')" class="bg-white text-primary px-8 py-3 rounded-xl font-semibold shadow-lg hover:bg-indigo-50 hover:scale-105 transition-all">เข้าสู่ระบบ</button>
-                            <button onclick="showGuestView('view-public-apply')" class="bg-indigo-500 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:bg-indigo-400 hover:scale-105 transition-all border border-indigo-400">ส่งฟอร์มสมัครงานอิสระ</button>
+                            <button onclick="showGuestView('view-public-apply')" class="bg-indigo-500 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:bg-indigo-400 hover:scale-105 transition-all border border-indigo-400">สมัครงาน</button>
                         </div>
                     </div>
                     <div class="hidden md:block w-1/3">
                         <div class="bg-white/20 p-8 rounded-2xl backdrop-blur-md border border-white/30 text-center shadow-xl">
         
         <!-- 1. ส่วนของโลโก้ -->
-<img src="logo.png" alt="Company Logo" class="w-32 h-32 mx-auto mb-4 object-contain shadow-md rounded-2xl bg-white p-1 hover:scale-105 transition-transform duration-300">
+<img src="https://mqijrnbdgtberkweldmi.supabase.co/storage/v1/object/public/img/logo.png" 
+     alt="Company Logo" 
+     class="w-32 h-32 mx-auto mb-4 object-contain shadow-md rounded-2xl bg-white p-1 hover:scale-105 transition-transform duration-300">
 
 <!-- 2. ส่วนของข้อความที่ปรับสีให้ชัดเจนขึ้น -->
 <h3 class="text-3xl font-bold text-amber-500 drop-shadow-md tracking-wide">
@@ -174,7 +176,7 @@
         </aside>
 
         <!-- Main Content Area -->
-        <main class="flex-1 md:ml-64 pb-24 md:pb-6 transition-all min-h-screen relative">
+        <mai<main class="flex-1 md:ml-64 pb-24 md:pb-6 transition-all min-h-screen relative w-full max-w-full overflow-x-hidden">n class="flex-1 md:ml-64 pb-24 md:pb-6 transition-all min-h-screen relative">
             <header class="md:hidden bg-white shadow-sm p-4 flex justify-between items-center sticky top-0 z-30">
                 <div class="flex items-center gap-2 text-primary font-bold"><i data-lucide="layers"></i> KVS HR</div>
                 <div class="text-xs bg-slate-100 px-2 py-1 rounded-full text-secondary" id="mobile-role-display"></div>
@@ -213,7 +215,7 @@
                         <button onclick="openJobForm()" class="bg-primary text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-indigo-600 flex items-center gap-2"><i data-lucide="plus" class="w-4 h-4"></i> เพิ่มประกาศงาน</button>
                     </div>
                     <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
-                        <div class="overflow-x-auto">
+                        <div class="overflow-x<div class="overflow-x-auto w-full max-w-[100vw]">-auto">
                             <table class="w-full text-left border-collapse text-sm whitespace-nowrap">
                                 <thead>
                                     <tr class="bg-slate-50 text-slate-600 border-b">
